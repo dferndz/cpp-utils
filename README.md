@@ -5,7 +5,7 @@
 `brew tap dferndz/formulae`  
 `brew install cpp-utils`
 
-### Usage
+### Usage (requires c++ 17)
 
 ```
 #include <range.h>
