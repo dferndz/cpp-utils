@@ -1,5 +1,10 @@
 # cpp-utils
 
+![](https://badgen.net/github/license/dferndz/cpp-utils)
+![](https://badgen.net/github/tag/dferndz/cpp-utils)
+![](https://badgen.net/github/checks/dferndz/cpp-utils/main/test)
+
+
 ### Installation (macOS)
 
 `brew tap dferndz/formulae`  
