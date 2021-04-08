@@ -11,11 +11,16 @@ OUTFILES := $(addprefix $(BUILDDIR)/,$(SOURCES:%.cc=%))
 
 all: $(OBJECTS)
 
+$(BUILDDIR):
+	mkdir $(BUILDDIR)
+
 test: all
 	$(foreach file, $(OUTFILES), $(file);)
 
-%: %.cc
+%: %.cc $(BUILDDIR)
+	$(test -e $(BUILDDIR))
 	$(CC) $(CF) $< -o $(BUILDDIR)/$@
 
 clean:
 	rm $(BUILDDIR)/*
+	rm -r $(BUILDDIR)
