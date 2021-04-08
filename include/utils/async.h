@@ -6,11 +6,7 @@
 #include <mutex>
 #include <list>
 
-#include "barrier.h"
 #include "range.h"
-#include "atomic.h"
-#include "time.h"
-
 
 template <typename T = void>
 class async {
@@ -80,7 +76,7 @@ public:
     std::this_thread::yield();
   }
 
-  static std::thread::id stop() {
+  static std::thread::id getId() {
     return std::this_thread::get_id();
   }
 };
