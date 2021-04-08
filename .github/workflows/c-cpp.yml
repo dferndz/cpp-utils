@@ -1,0 +1,13 @@
+name: C/C++ CI
+
+on: [ push, pull_request ]
+
+jobs:
+  test:
+    name: Unit tests
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: make test
+      run: make -s test
