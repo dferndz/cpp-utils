@@ -1,6 +1,10 @@
 #ifndef _utils_h_
 #define _utils_h_
 
+#ifndef INT_MAX
+#define INT_MAX 2147483647
+#endif
+
 #include <random>
 #include <iostream>
 
