@@ -3,3 +3,6 @@ test:
 
 clean: 
 	cd tests && make clean
+
+%.test:
+	cd tests && make $@

@@ -17,6 +17,9 @@ $(BUILDDIR):
 test: all
 	$(foreach file, $(OUTFILES), $(file);)
 
+%.test: %
+	./$(BUILDDIR)/$<
+
 %: %.cc $(BUILDDIR)
 	$(test -e $(BUILDDIR))
 	$(CC) $(CF) $< -o $(BUILDDIR)/$@
