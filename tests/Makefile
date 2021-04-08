@@ -1,5 +1,5 @@
 CC=g++
-CF=-std=c++17 -I../include/
+CF=-std=c++17 -I../include/ -pthread
 SOURCEDIR=.
 BUILDDIR=build
 
